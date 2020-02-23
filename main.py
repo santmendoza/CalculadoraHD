@@ -17,12 +17,21 @@ while x!=1:
 
     print('Selecciona la operacion que quieras realizar: ')
     print('#########################')
+<<<<<<< HEAD
     print('###** 1.Sumar       **###')
     print('###** 2.Restar      **###')
     print('###** 3.Multiplicar **###')
     print('###** 4.Dividir     **###')
     print('###** 5.Area        **###')
     print('###** 6.Salir       **###')
+=======
+    print('###** 1.Sumar        **###')
+    print('###** 2.Restar       **###')
+    print('###** 3.Multiplicar  **###')
+    print('###** 4.Dividir      **###')
+    print('###** 5.Potencia     **###')
+    print('###** 6.Salir        **###')
+>>>>>>> rama2
     print('#########################')
    
    #vayan ampliando las operaciones de la calculadora, inventen lo que se le de la gana
@@ -34,6 +43,7 @@ while x!=1:
 
 
     if n==1: 
+<<<<<<< HEAD
         resultado=c.sumar(a,b)
 
     if n==2:
@@ -49,9 +59,28 @@ while x!=1:
         if b==0:
            print("Division por cero no es posible") 
         
+=======
+        resultado = c.sumar(a,b)
+
+    elif n==2:
+        resultado = c.restar(a,b)
+    
+    elif n==3:
+        resultado = c.multiplicar(a,b)
+    
+    elif n==4 and b!=0:
+        resultado = c.dividir(a,b)
+
+    elif n==5:
+        resultado = c.potencia(a,b)
+
+    elif n==6:
+>>>>>>> rama2
         print("Gracias por usar la calculadora")
         x=1
-        
+
+    else:
+        print("opción invaida")    
     
     if n>0 and n<6 and b!=0:
      print(resultado)
