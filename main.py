@@ -24,7 +24,7 @@ while x!=1:
     print('###** 5.Salir       **###')
     print('#########################')
    
-
+   #vayan ampliando las operaciones de la calculadora, inventen lo que se le de la gana
     try:
           n= int(input('Elige una opción: '))
     except:
