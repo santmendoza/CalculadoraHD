@@ -17,11 +17,12 @@ while x!=1:
 
     print('Selecciona la operacion que quieras realizar: ')
     print('#########################')
-    print('###** 1.Sumar       **###')
-    print('###** 2.Restar      **###')
-    print('###** 3.Multiplicar **###')
-    print('###** 4.Dividir     **###')
-    print('###** 5.Salir       **###')
+    print('###** 1.Sumar        **###')
+    print('###** 2.Restar       **###')
+    print('###** 3.Multiplicar  **###')
+    print('###** 4.Dividir      **###')
+    print('###** 5.Potencia     **###')
+    print('###** 6.Salir        **###')
     print('#########################')
    
    #vayan ampliando las operaciones de la calculadora, inventen lo que se le de la gana
@@ -33,24 +34,28 @@ while x!=1:
 
 
     if n==1: 
-        resultado=c.sumar(a,b)
+        resultado = c.sumar(a,b)
 
-    if n==2:
-        resultado=c.restar(a,b)
-    if n==3:
-        resultado=c.multiplicar(a,b)
-    if n==4 and b!=0:
-        resultado=c.dividir(a,b)
+    elif n==2:
+        resultado = c.restar(a,b)
+    
+    elif n==3:
+        resultado = c.multiplicar(a,b)
+    
+    elif n==4 and b!=0:
+        resultado = c.dividir(a,b)
 
-    if n==5 or b==0:
-        if b==0:
-           print("Division por cero no es posible") 
-        
+    elif n==5:
+        resultado = c.potencia(a,b)
+
+    elif n==6:
         print("Gracias por usar la calculadora")
         x=1
-        
+
+    else:
+        print("opción invaida")    
     
-    if n>0 and n<5 and b!=0:
+    if n>0 and n<6 and b!=0:
      print(resultado)
 
 

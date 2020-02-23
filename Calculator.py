@@ -6,20 +6,20 @@ class Calc:
         #Agreguen más métodos, si desean pueden crear otra clase y hacer que herede y montan otros metodos. lo importante 
         #es mantener orden y no la caguen, todo es en ramas...
         def sumar (self,a,b):
-       
                 return a+b
          
         def restar (self, a,b):
-       
                 return a-b
         
         def multiplicar (self,a,b):
-                
                return a*b
 
         def dividir (self,a,b):
-                
                 return a/b
+
+        def potencia(self,a,b):
+                return a**b
+
 
        
 
